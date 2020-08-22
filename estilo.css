@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration:none;
+    font-family: 'Montserrat',sans-serif;
+}
+nav{
+    height: 80px;
+    background:white;
+    align-content: center;
+}
+nav img{
+    width: 150px;
+    position: absolute;
+    top: 17px;
+    left:12%;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 15px;
+}
+nav ul li a{
+ position: relative;
+ color:#555;
+ font-size:18px;
+ padding:5px 0;
+ text-transform: uppercase;
+}
+nav ul li a:before{
+    position:absolute;
+    content:'';
+    left:0;
+    bottom:3px;
+    width:100%;
+    background:#e52e3b;
+    transform:scale(0);
+    transform-origin: right;
+    transition: transform.4s linear;
+}
+nav ul li a:hover:before{
+    transform:scale(1);
+    transform-origin: left;
+}
+label #btn-nav,
+ label #cancel{
+    color:#555;
+    font-size:40px;
+    float: right;
+    line-height: 80px;
+    margin-right: 80px;
+    cursor: pointer;
+    display:none;
+}
+#check{
+    display:none;
+    }
+    @media (max-width:1118px){
+        nav img{
+            left:8%;
+        }
+    }
+    @media (max-width:944px){
+        nav img{
+            left:6%;
+            top:20px;
+            width:170px;
+        }
+        nav ul li a{
+            font-size:17px;
+    
+        }
+    }
+    @media (max-width:860px){
+        label #btn-nav{
+            display: block;
+        }
+        ul{
+           position:fixed;
+           width: 100%; 
+           height: 100vh;
+           background:white;
+           top:80px;
+           left:-100%;
+           text-align: center;
+            transition:all.5s;
+        }
+        nav ul li{
+            display:block;
+            margin:50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size:20px;
+            
+        }
+        #check:checked ~ ul{
+            left:0;
+        }
+    }
+
+/*Secçao Hero*/
+
+   .hero{
+    display:flex;
+    position:relative;
+    background-color:white;
+    flex-direction: row;
+    margin-top:10px;
+    padding:20px;
+    }
+    .btn{
+        color: #fff;
+    background: #e52e3b;
+    box-shadow: 1px 1px 10px #000;
+    display: inline-block;
+    margin: 20px 0px;
+    }
+  
+/*SOBRE*/
+.sobre{
+    background-color:#e52e3b;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:center;
+
+    padding:100px 50px;
+
+}
+.sobre h2{
+    font-size:2rem;
+    margin-bottom:35px;
+    color:white;
+    text-align: center;;
+}
+.sobre h3{
+    color:white;
+    text-align: center;
+}
+.sobre p{
+    max-width: 800px;
+    margin-bottom:35px;
+    color:white;
+    text-align:center;
+}
+  .sobre hr{
+      width: 200px;
+      height: 2px;
+      background-color:white;
+      margin-bottom: 70px;
+      border:none;
+  }
+  .sobre.grid{
+      width:100%;
+      display:flex;
+      flex-wrap:wrap;
+  }  
+  .sobre .grid li{
+      padding: 0 30px;
+      text-align: center;
+    }
+    .sobre li i { 
+        color:white; 
+        font-size: 3.5rem;
+        margin-bottom:30 px;
+    }
+  .sobre .grid li h2{
+      font-size:1.5rem;
+      color:white;
+      margin-bottom:30px ;
+  }  
+/*serviços*/
+
+.servico{
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:100px 50px;
+
+}
+.servico h2{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#e52e3b;
+    text-align: center;;
+}
+.servico h3{
+    color:#e52e3b;
+    text-align: center;
+}
+.servico p{
+    max-width: 800px;
+    margin-bottom:20px;
+    color:#e52e3b;
+    text-align:center;
+}
+  .servico hr{
+      width: 200px;
+      height: 2px;
+      background-color:#e52e3b;
+      margin-bottom: 10px;
+      border:none;
+  }
+  .grid2{
+      display:flex;
+      flex-direction:row;
+      justify-content: center;
+  }
+  .servico.grid2{
+      width:100%;
+      display:flex;   
+  }  
+  .servico .grid2 li{
+      padding: 0 10px;
+      text-align: center;
+    }
+    .servico li i { 
+        color:#e52e3b; 
+        font-size: 3.5rem;
+        margin-bottom:10px;
+    }
+  .servico.grid2 li h2{
+      font-size:1.5rem;
+      color:#e52e3b;
+      margin-bottom:10px ;
+  }  
+
+/*ideia*/
+.ideia{
+    display:flex;
+    background-color:#e52e3b;
+    color:white;
+
+}
+.blog{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    color:#e52e3b; 
+}
+.contato{
+    background:#555;
+    display:flex;
+    color:white;
+}
+.contato img{
+    left:6%;
+    top:50px;
+    width:170px;   
+}
+
